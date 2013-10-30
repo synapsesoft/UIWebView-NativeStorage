@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Examples</title>
+</head>
+<body>
+
+<p></p>
+<p></p>
+<p></p>
+
+<input id="input" value="testvalue">
+<button onclick="set($('#input').val())">SET</button>
+<button onclick="get()">GET</button>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="main.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+  //main();
+  jQuery.ajaxSetup({cache: false});
+}
+</script>
+
+</body>
+</html>
