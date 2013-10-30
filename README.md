@@ -18,6 +18,11 @@ A Extended Class for URL loading . Save into iOS App sandbox from JavaScript int
   
   [self.view addSubview:webView];
 }
+
+- (void)dealloc
+{
+  [UIWNativeStorage disable];
+}
 ```
 
 
